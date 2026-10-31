@@ -1,0 +1,32 @@
+
+{
+    "name": "Focus Filter Extension",
+    "version": "1.2",
+    "manifest_version": 3,
+    "description": "Filter distracting content on Instagram and stay focused.",
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "host_permissions": [
+        "https://www.instagram.com/*"
+    ],
+
+    "action": {
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.instagram.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
