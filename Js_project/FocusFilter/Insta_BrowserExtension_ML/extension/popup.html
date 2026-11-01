@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InstaFocus</title>
+    <style>
+        body {
+            width: 280px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 12px;
+        }
+
+        button {
+            background-color: #6c4cff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>InstaFocus</h2>
+
+    <p>What content do you want to see?</p>
+
+    <select id="interest">
+        <option value="Technology">Technology</option>
+        <option value="Fitness">Fitness</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Cooking">Cooking</option>
+    </select>
+
+    <button id="save">Save Interest</button>
+
+    <p id="status"></p>
+
+    <script src="popup.js"></script>
+</body>
+</html>

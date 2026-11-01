@@ -1,0 +1,5 @@
+.instafocus-blurred {
+    filter: blur(12px) !important;
+    opacity: 0.5;
+    transition: filter 0.3s ease;
+}

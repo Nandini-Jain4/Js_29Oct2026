@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "InstaFocus",
+  "version": "1.0",
+  "description": "Filter distracting Instagram posts based on your interests.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "http://127.0.0.1:5000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
